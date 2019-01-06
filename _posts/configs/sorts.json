@@ -1,0 +1,34 @@
+{
+    "": [
+        "2018-06-10-install-ghost-on-centos.md", 
+        "2018-06-10-ghost-ssl.md", 
+        "2018-06-10-install-many-ghost-at-centod.md", 
+        "2018-06-09-how-to-install-ghost-in-ubuntu.md", 
+        "2018-06-10-how-to-change-ghost-route.md", 
+        "2018-03-20-about-flexbox.md", 
+        "2019"
+    ], 
+    "__positions": {
+        "2018-06-10-install-many-ghost-at-centod.md": 3, 
+        "2018-03-20-about-flexbox.md": 6, 
+        "2018-06-10-install-ghost-on-centos.md": 1, 
+        "2018-06-10-how-to-change-ghost-route.md": 5, 
+        "2019/how-to-vpn.md": 7001, 
+        "2018-06-10-ghost-ssl.md": 2, 
+        "2019": 7, 
+        "2018-06-09-how-to-install-ghost-in-ubuntu.md": 4
+    }, 
+    "2019": [
+        "how-to-vpn.md"
+    ], 
+    "__raw_positions": {
+        "2018-06-10-install-many-ghost-at-centod.md": 3, 
+        "2018-03-20-about-flexbox.md": 6, 
+        "2018-06-10-install-ghost-on-centos.md": 1, 
+        "2018-06-10-how-to-change-ghost-route.md": 5, 
+        "2019/how-to-vpn.md": 1, 
+        "2018-06-10-ghost-ssl.md": 2, 
+        "2019": 7, 
+        "2018-06-09-how-to-install-ghost-in-ubuntu.md": 4
+    }
+}
