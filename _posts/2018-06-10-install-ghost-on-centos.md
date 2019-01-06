@@ -46,7 +46,7 @@ cd /var/www/ghost
 ghost install local --db=sqlite3
 ```
 
-![](./_image/2018-12/2018-12-05-21-07-24.jpg)
+![](/images/2018-12/2018-12-05-21-07-24.jpg)
 安装成功！
 
 ## 安装 Nginx
@@ -61,7 +61,7 @@ ghost install local --db=sqlite3
 
 `yum install -y nginx`
 
-![](./_image/2018-12/2018-12-05-21-08-30.jpg)
+![](/images/2018-12/2018-12-05-21-08-30.jpg)
 Nginx 完成安装在服务器中
 
 ### 启动 Nginx
@@ -72,7 +72,7 @@ Nginx 完成安装在服务器中
 
 如果一切进展顺利的话，现在你可以通过你 IP( http://<您的 CVM IP 地址>/ )来访问你的 Web 页面来预览一下 Nginx 的默认页面。
 
-![](./_image/2018-12/2018-12-05-21-10-43.jpg)
+![](/images/2018-12/2018-12-05-21-10-43.jpg)
 
 如果看到上面的页面,那么说明你的 CentOS 中的 Nginx 已经正确安装。
 
@@ -108,7 +108,7 @@ location / {
 
 完成后通过按 `ESC` ，随后输入 `:wq` 回车保存。
 
-![](./_image/2018-12/2018-12-05-21-15-39.jpg)
+![](/images/2018-12/2018-12-05-21-15-39.jpg)
 
 然后运行 `nginx -s reload` 重启 Nginx。
 
