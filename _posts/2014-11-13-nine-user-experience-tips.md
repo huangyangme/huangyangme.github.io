@@ -1,4 +1,10 @@
-#九个关于用户体验方面的提示[译]
+---
+layout: post
+title: "九个关于用户体验方面的提示[译]"
+comments: true
+description: ""
+keywords: "UED"
+---
 
 > 本文作者 Jason Hreha 创办了行为设计咨询公司 Dopamine，他还是500 Startups 的UX顾问，和 Thiel Foundation“20 Under 20”项目的 Mentor。原文标题 **[Nine User-Experience Tips to Rule Them All](https://medium.com/i-m-h-o/1dbe15dc1490 "Nine User-Experience Tips to Rule Them All")**
 

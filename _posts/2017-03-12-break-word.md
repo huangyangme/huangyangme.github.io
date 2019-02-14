@@ -1,4 +1,10 @@
-# CSS设置【强制不换行】【自动换行】【强制英文单词断行】
+---
+layout: post
+title: "CSS设置【强制不换行】【自动换行】【强制英文单词断行】"
+comments: true
+description: ""
+keywords: "css"
+---
 
 
 **强制不换行**

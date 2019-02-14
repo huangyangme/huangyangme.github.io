@@ -1,4 +1,10 @@
-# 网页上传图片 HTML5 upload images
+---
+layout: post
+title: "网页上传图片 HTML5 upload images"
+comments: true
+description: ""
+keywords: "html5"
+---
 
 
     <input type="file" accept="video/*;capture=camcorder">

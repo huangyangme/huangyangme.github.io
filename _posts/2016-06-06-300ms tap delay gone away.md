@@ -1,7 +1,10 @@
-# 300ms tap delay
-
-
-## 300 毫秒延迟，浏览器开发商提供的解决方案
+---
+layout: post
+title: "300 毫秒延迟，浏览器开发商提供的解决方案"
+comments: true
+description: ""
+keywords: ""
+---
 
 ### 禁用缩放
 

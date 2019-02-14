@@ -1,4 +1,10 @@
-#Apple URL Scheme Reference
+---
+layout: post
+title: "Apple URL Scheme Reference"
+comments: true
+description: ""
+keywords: "Scheme"
+---
 
 
 ##Mail Links

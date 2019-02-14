@@ -1,4 +1,10 @@
-#前端er 与 IE6 的那些事
+---
+layout: post
+title: "前端er 与 IE6 的那些事"
+comments: true
+description: ""
+keywords: "ie"
+---
 
 做 web 前端开发或者重构，最痛恨的我想莫过于 IE6 这个老古董 IE 浏览器吧。修 IE6 的 Bug 也是每一个前端开发者都有过的“惨痛”经历。此时突然想侃侃 IE6 的那些事。
 

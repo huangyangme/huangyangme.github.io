@@ -1,4 +1,10 @@
-# HTTP协议详解
+---
+layout: post
+title: "HTTP协议详解"
+comments: true
+description: ""
+keywords: "http"
+---
 
 > _Author: Jeffrey_
 
