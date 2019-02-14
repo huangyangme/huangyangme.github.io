@@ -1,5 +1,12 @@
-#使用页面可见性API
+---
+layout: post
+title: "使用页面可见性API"
+comments: true
+description: ""
+keywords: ""
+---
 
+```javascript
     //startSimulation和pauseSimulation函数定义在其他地方
     function handleVisibilityChange() {
         if (document.hidden) {
@@ -9,6 +16,7 @@
         }
     }
     document.addEventListener("visibilitychange", handleVisibilityChange, false);
+```
 
 该API一个很好的用处就是能够在页面切换到不可见状态时暂停执行一些不必要的操作,以减少资源的浪费.
 

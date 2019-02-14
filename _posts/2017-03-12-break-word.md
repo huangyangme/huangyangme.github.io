@@ -9,19 +9,19 @@ keywords: "css"
 
 **强制不换行**
 
-<pre><code class="language-css">
+```css
 white-space:nowrap;
-</code></pre>
+```
 
 **自动换行**
 
-<pre><code class="language-css">
+```css
 word-wrap: break-word;
 word-break: normal;
-</code></pre>
+```
 
 **强制英文单词断行**
 
-<pre><code class="language-css">
+```css
 word-break:break-all;
-</code></pre>
+```

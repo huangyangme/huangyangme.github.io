@@ -1,4 +1,10 @@
-# Retina 屏幕下，网页图片的显示兼容
+---
+layout: post
+title: "Retina 屏幕下，网页图片的显示兼容"
+comments: true
+description: ""
+keywords: ""
+---
 
 > 原文链接：http://mutian.info/tech/1386
 
@@ -6,14 +12,15 @@
 
 我们以一张 300*200px 的照片为例：
 
-    <img src="./photo.jpg" style="width:300px;height:200px;" />
+`<img src="./photo.jpg" style="width:300px;height:200px;" />`
 
 如果想让这张图片在 Retina 屏幕下达到应有的显示分辨率，只需使用该照片的源文件导出一张清晰的 600*400px 的图片，我们将其命名为 photo@2x.jpg，替换现有的图片即可：
 
-    <img src="./photo@2x.jpg" style="width:300px;height:200px;" />
+`<img src="./photo@2x.jpg" style="width:300px;height:200px;" />`
 
 换成 @2X 图片，在 Retina 屏幕下的显示就清晰多了，可谓细节毕现。不过在普通屏幕下，图片的显示需要经过浏览器的压缩，一些老版本浏览器如 IE6、7 会显示得非常失真，同时大尺寸的图片会占用更多的带宽，增加页面加载的时间，降低用户体验。通过 JS 的辅助，可以让图片在普通屏幕和 Retina 屏幕下做到自动适配：
 
+```
     <img class="photo" src="./photo.jpg" style="width:300px;height:200px;" />
      
     <script type="text/javascript">
@@ -28,7 +35,7 @@
         }
     });
     </script>
-
+```
 
 
 [Retina.js](http://retinajs.com/) 提供了更加完善的解决方案，自动匹配屏幕分辨率的同时，还可以检测服务器上是否存有当前图片的 @2X 版本，以决定是否替换。
@@ -50,16 +57,17 @@
 
 我们以一张 logo 的背景图为例，首先我们定义 logo 的尺寸为 100*40px，然后为 #logo 设定一个 100*40px 的背景图片 logo.png，
 
+```css
 #logo {
     width: 100px;
     height: 40px;
     background: url(./logo.png) 0 0 no-repeat;
 }
-
+```
 
 接下来通过 Meta Queries 判断设备的最小显示像素比，如果大于等于1.5的话，为 #logo 设定一张 200*80px 的背景图片 logo@2x.png，然后通过设置 background-size 让背景图显示为 logo 该有的尺寸。这里的显示像素比我们选择 1.5 作为阈值，是为兼容除苹果以外的高分辨率设备，比如三星的 Android Pad。
 
-
+```css
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
            only screen and (min--moz-device-pixel-ratio: 1.5), /* 注意这里的写法比较特殊 */
            only screen and (-o-min-device-pixel-ratio: 3/2),
@@ -69,18 +77,20 @@
             background-size: 100px auto;
         }
     }
-
+```
 
 这样，对于普通的显示设备或是不支持 Meta Queries 的浏览器，会显示标准的背景图，对于支持 Meta Queries 的 Retina 设备，会显示 @2X 的背景图。（ IE6、7、8 均不支持 Meta Queries 和 background-size ）
 
 如果仅是为了兼容当前的苹果 Retina 显示屏，也可以直接判断设备的显示像素比是否等于2：
 
+```css
     @media only screen and (-webkit-device-pixel-ratio: 2),
            only screen and (-moz-device-pixel-ratio: 2),
            only screen and (-o-device-pixel-ratio: 2/1),
            only screen and (device-pixel-ratio: 2) {
         ...
     }
+```
 
 优点：
 
@@ -96,10 +106,12 @@
 
 我们同样以之前的 logo 为例，实现方式如下：
 
+```css
     #logo {
         background: url(./logo.png) 0 0 no-repeat;
         background-image: -webkit-image-set(url(./logo.png) 1x, url(./logo@2x.png) 2x);
     }
+```
 
 优点：
 
@@ -121,8 +133,9 @@
 使用 SVG 格式图片，可以像我们使用其他格式的图片一样，用 HTML 的 <img> 标签引用，或用 CSS 的 background-image 、 content:url() 属性，需要注意的是，无论用哪种形式，最好定义一下图片的尺寸。
 
 
-    <img src="example.svg" width="300" height="200" />
+`<img src="example.svg" width="300" height="200" />`
 
+```css
     /* Using background-image */
     .image {
         background-image: url(example.svg);
@@ -136,6 +149,7 @@
         content: url(example.svg);
         /* width and height do not work with content:url() */
     }
+```
 
 如果需要兼容 IE6、7、8 或是其他一些不支持 SVG 的浏览器，需要额外用到 PNG 格式的图片副本（关于 PNG 格式 Alpha 通道的兼容问题这里不做讨论）。
 
@@ -147,6 +161,7 @@
 
 然后引入 jQuery 和 Modernizr 判断当前浏览器是否支持 SVG ，不支持的话使用 PNG 替换 SVG 。
 
+```
     $(document).ready(function(){
         if(!Modernizr.svg) {
             var images = $('img[data-png-fallback]');
@@ -155,11 +170,13 @@
             });
         }
     });
+```
 
 ### 3.2 CSS 背景引用 SVG 格式图片
 
 引入 Modernizr ，将 CSS 改写成以下形式即可：
 
+```css
     .image {
         background-image: url(example.png);
         background-size: 30p0x 200px;
@@ -170,6 +187,7 @@
             background-image: url(example.svg);
         }
     }
+```
 
 为了获得最佳的跨浏览器兼容效果，避免在 Firefox 和 Opera 下出现光栅问题，制作的 SVG 图片最小要达到父容器的尺寸。
 

@@ -1,26 +1,33 @@
-# CSS自定义复选框和单选按钮
+---
+layout: post
+title: "CSS自定义复选框和单选按钮"
+comments: true
+description: ""
+keywords: "css"
+---
 
 有时候你会觉得默认的复选框和单选按钮看起来总是太过单调，并且不仅在不同的操作系统平台上的视觉效果不一致，就算都是在PC机上，不同的浏览器也会有自己“个性”的显示样式。如果想自定义复选框和单选按钮样式，可以通过CSS+JavaScript来实现。实现起来并不复杂。 
 
 **结构：**
-
+```html
     <input type="checkbox" value="" id="check-1">
     <label for="check-1" class="">复选按钮</label>
 
     <input type="radio" value="" id="check" name="">
     <label for="check" class="">单选按钮</label>
+```
 
 **使用CSS3给其添加自定义样式：**
 
 *wrapper*
 
-<pre><code class="language-css">
+```css
     custom-checkbox, #custom-radio {position: relative;float: left}
-</code></pre>
+```
 
 *input, label position*
 
-<pre><code class="language-css">
+```css
     custom-checkbox input,#custom-radio input {
         position: absolute;
         margin:0;
@@ -42,30 +49,30 @@
         cursor: pointer;
         outline: none;
     }
-</code></pre>
+```
 
 *默认状态*
 
-<pre><code class="language-css">
+```css
     custom-checkbox label, #custom-radio label{
         color: #D54E21;
         border: 1px solid #D54E21;
         background-color:#fafafa;
         border-radius: 3px
     }
-</code></pre>
+```
 
 *鼠标悬停和焦点状态*
 
-<pre><code class="language-css">
+```css
     custom-checkbox label.hover, #custom-checkbox label.focus, #custom-radio label.hover,#custom-radio label.focus {
         background-color: #e4916a
     }
-</code></pre>
+```
 
 *选中状态*
 
-<pre><code class="language-css">
+```css
     custom-checkbox label.checked,#custom-radio label.checked {
         background-color: #D54E21;color: #fff;text-shadow: 0 -1px 0 rgba(0,0,0,0.25)
     }
@@ -85,7 +92,7 @@
     .control-group .span1 label{
         width: 80px
     }
-</code></pre>
+```
 
 **引入jQuery和 [customInput.jquery.js](http://huangyang.me/demo/checkbox/checkbox.js) 插件：**
 
@@ -93,7 +100,9 @@
 
 **最后调用插件：**
 
+```css
     $('input').customInput();
+```
 
 **[演示](http://huangyang.me/demo/checkbox/)**
 

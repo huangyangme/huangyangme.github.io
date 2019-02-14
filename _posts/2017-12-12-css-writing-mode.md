@@ -1,4 +1,10 @@
-# css实现文本竖排 - writing-mode
+---
+layout: post
+title: "css实现文本竖排 - writing-mode"
+comments: true
+description: ""
+keywords: ""
+---
 
 **语法**
 

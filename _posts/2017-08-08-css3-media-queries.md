@@ -1,6 +1,12 @@
-#Media Queries with Sass
+---
+layout: post
+title: "Media Queries with Sass"
+comments: true
+description: ""
+keywords: "sass"
+---
 
-<pre><code class="language-css">
+```css
     //定义设备宽度
     $phone-width: 320px;
     $tablet-width: 768px;
@@ -49,6 +55,6 @@
         font-size: 20px;
       }
     }
-</code></pre>
+```
 
 相关：[http://davidwalsh.name/write-media-queries-sass](http://davidwalsh.name/write-media-queries-sass)

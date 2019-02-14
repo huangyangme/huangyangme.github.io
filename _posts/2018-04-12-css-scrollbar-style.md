@@ -1,8 +1,14 @@
-# CSS自定义滚动条样式[scrollbar]
+---
+layout: post
+title: "CSS自定义滚动条样式[scrollbar]"
+comments: true
+description: ""
+keywords: "scrollbar,css"
+---
 
 通过css的一些伪类来个性化网页滚动条。
 
-<pre><code class="language-css">
+```css
 ::-webkit-scrollbar //滚动条整体部分
 ::-webkit-scrollbar-button //滚动条两端的按钮
 ::-webkit-scrollbar-track //外层轨道
@@ -10,7 +16,7 @@
 ::-webkit-scrollbar-thumb //（滚动条里面可以拖动的那个）
 ::-webkit-scrollbar-corner //边角
 ::-webkit-resizer //定义右下角拖动块的样式
-</code></pre>
+```
 
 实际上还有很多更多的更丰富的伪类来控制滚动条样式，不过在以上列出的一些已经能够满足基本的需要了。
 

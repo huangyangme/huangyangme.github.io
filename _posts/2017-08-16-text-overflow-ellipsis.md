@@ -1,13 +1,19 @@
-# 多行文本溢出显示省略号(…)
+---
+layout: post
+title: "多行文本溢出显示省略号(…)"
+comments: true
+description: ""
+keywords: ""
+---
 
 
 单行文本的溢出显示省略号(…): `text-overflow:ellipsis`
 
-<pre><code class="language-css">
+```css
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-</code></pre>
+```
 
 但是这个属性并不支持多行文本溢出显示省略号，这里根据应用场景介绍几个方法来实现这样的效果。
 
@@ -21,13 +27,13 @@
 `-webkit-box-orient` 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
 `text-overflow: ellipsis`;，可以用来多行文本的情况下，用省略号“…”隐藏超出范围的文本 。
 
-<pre><code class="language-css">
+```css
     overflow : hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-</code></pre>
+```
 
 此属性比较合适 WebKit 浏览器或移动端（绝大部分是 WebKit 内核的）浏览器 [Demo](http://www.css88.com/webkit/-webkit-line-clamp/)。
 
@@ -35,7 +41,7 @@
 
 另一种做法就是设置相对定位的容器高度，用包含省略号(…)的元素（背景图片等）模拟实现；
 
-<pre><code class="language-css">
+```css
     p {
         position:relative;
         line-height:1.4em;
@@ -52,7 +58,7 @@
         padding:0 20px 1px 45px;
         background:url(ellipsis_bg.png) repeat-y;
     }
-</code></pre>
+```
 
 这里注意几点：
 
@@ -78,8 +84,10 @@
 
 这个使用起来也很方便：
 
+```javascript
     $(document).ready(function() {
         $("#wrapper").dotdotdot({
             //  configuration goes here
         });
     });
+```

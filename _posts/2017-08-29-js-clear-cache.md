@@ -1,4 +1,10 @@
-#js清除浏览器缓存的几种方法
+---
+layout: post
+title: "js清除浏览器缓存的几种方法"
+comments: true
+description: ""
+keywords: "js"
+---
 
 ##meta方法
 
@@ -15,6 +21,7 @@
 
 方式一：用ajax请求服务器最新文件，并加上请求头If-Modified-Since和Cache-Control,如下:
 
+```
       $.ajax({
          url:'www.haorooms.com',
          dataType:'json',
@@ -28,9 +35,11 @@
          }
          async:false
       });
+```
 
 方法二，直接用cache:false,
 
+```
       $.ajax({
          url:'www.haorooms.com',
          dataType:'json',
@@ -42,6 +51,7 @@
          }
          async:false
       });
+```
 
 方法三：用随机数，随机数也是避免缓存的一种很不错的方法！
 

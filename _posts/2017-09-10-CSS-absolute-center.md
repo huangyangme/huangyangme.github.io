@@ -1,12 +1,18 @@
-# CSS 绝对定位居中定位
+---
+layout: post
+title: "CSS 绝对定位居中定位"
+comments: true
+description: ""
+keywords: "css"
+---
 
-<pre><code class="language-css">
+```css
 .Absolute-Center {
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
 }
-</code></pre>
+```css
 
 **优点：**
 
@@ -33,7 +39,7 @@ Chrome,Firefox, Safari, Mobile Safari, IE8-10.
 
 ##使用 Flexbox 的居中布局
 
-<pre><code class="language-css">
+```css
 .vertical-container {
   height: 300px;
   display: -webkit-flex;
@@ -43,4 +49,4 @@ Chrome,Firefox, Safari, Mobile Safari, IE8-10.
   -webkit-justify-content: center;
   justify-content: center;
 }
-</code></pre>
+```

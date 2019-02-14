@@ -1,4 +1,10 @@
-#js延迟加载
+---
+layout: post
+title: "js延迟加载"
+comments: true
+description: ""
+keywords: "js"
+---
 
 
 
@@ -10,7 +16,9 @@
 
 **async**
 
-    <script async="async">
+```javascript
+<script async="async">
+```
 
 对于async，这个是html5中新增的属性，它的作用是能够异步的加载和执行脚本，不因为加载脚本而阻塞页面的加载。一旦加载到就会立刻执行。async 属性仅适用于外部脚本（只有在使用 src 属性时）。
 
@@ -23,6 +31,7 @@
 
 这些代码应被放置在</body>标签前(接近HTML文件底部)。另外，我将外部JS文件名突出显示。
 
+```javascript
     <script type="text/javascript">
         // Add a script element as a child of the body
         function downloadJSAtOnload() {
@@ -38,12 +47,14 @@
                 window.attachEvent("onload", downloadJSAtOnload);
         else window.onload = downloadJSAtOnload;
     </script>
+```
 
 这段代码意思是等到整个文档加载完后，再加载外部文件“defer.js”。
 
 
 ## 代码延迟加载
 
+```javascript
     window.onload = function() {
         setTimeout(function(){
         
@@ -70,10 +81,11 @@
         
         }, 1000);
     };
+```
 
 ## 代码延迟执行
 
-
+```javascript
     function sleep(ms) {
         var dt = new Date();
         dt.setTime(dt.getTime() + ms);
@@ -82,7 +94,7 @@
     sleep(2000);
     
     document.getElementById('inner').innerHTML = "Hello World!";
-
+```
 
 ---
 

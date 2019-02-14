@@ -1,4 +1,10 @@
-#Retina屏移动设备实现真正1px的线
+---
+layout: post
+title: "Retina屏移动设备实现真正1px的线"
+comments: true
+description: ""
+keywords: ""
+---
 
 ##1、0.5px
 

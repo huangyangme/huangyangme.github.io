@@ -1,5 +1,12 @@
-# 鼠标左右键控制翻页
+---
+layout: post
+title: "鼠标左右键控制翻页"
+comments: true
+description: ""
+keywords: "js"
+---
 
+```javascript
     <script>
         document.onkeydown=nextpage;
         var prevpage="preurl";//上一页链接
@@ -18,3 +25,4 @@
         }
         }
     </script>
+```

@@ -1,4 +1,10 @@
-# Remove Tap Highlight from Mobile Webkit
+---
+layout: post
+title: "Remove Tap Highlight from Mobile Webkit"
+comments: true
+description: ""
+keywords: "css"
+---
 
 
 `-webkit-tap-highlight-color: <color>;`
@@ -15,9 +21,11 @@ Apple 此举大概在于告诉用户当前聚焦到页面的什么地方。但�
 
 更多属性规则：
 
+```css
 	*{
         -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
         -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
         -webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
         -webkit-user-select:none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     }
+```

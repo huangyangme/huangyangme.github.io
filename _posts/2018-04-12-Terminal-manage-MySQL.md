@@ -1,4 +1,10 @@
-#Terminal 管理 MySQL
+---
+layout: post
+title: "Terminal 管理 MySQL"
+comments: true
+description: ""
+keywords: "mysql"
+---
 
 
 

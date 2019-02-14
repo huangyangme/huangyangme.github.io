@@ -1,4 +1,10 @@
-Mac OS X Terminal［Mac］
+---
+layout: post
+title: "Mac OS X Terminal［Mac］"
+comments: true
+description: ""
+keywords: ""
+---
 
 
 **man**
@@ -18,32 +24,42 @@ Mac OS X Terminal［Mac］
 
 显示：
 
+```
     defaults write com.apple.finder AppleShowAllFiles -bool true
     KillAll Finder
+```
 
 隐藏：
 
+```
     defaults write com.apple.finder AppleShowAllFiles -bool false
     KillAll Finder
-
+```
 
 **清除 DNS 缓存**
 
 Mac OS X 10.10
 
+```
     dscacheutil -flushcache sudo discoveryutil udnsflushcaches
+```
 
 Mac OS X 10.7 & 10.8 & 10.9
 
+```
     sudo killall -HUP mDNSResponder
+```
 
 Mac OS X 10.5 & 10.6
 
+```
     dscacheutil -flushcache
+```
 
 Mac OS X 10.4
-    
-    lookupd -flushcache
 
+```
+    lookupd -flushcache
+```
 
 其他：[http://www.renfei.org/blog/mac-os-x-terminal-101.html](http://www.renfei.org/blog/mac-os-x-terminal-101.html)
