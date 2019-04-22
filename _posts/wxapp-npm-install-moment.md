@@ -1,3 +1,11 @@
+---
+layout: post
+title: "小程序使用 npm 安装和配置 moment.js"
+comments: true
+description: ""
+keywords: "小程序 moment”
+---
+
 # 小程序使用 npm 安装和配置 moment.js
 
 

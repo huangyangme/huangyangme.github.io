@@ -1,10 +1,11 @@
-```
+---
 layout: post
 title: "为网站开启 gzip 压缩功能（nodejs、nginx）"
 comments: true
 description: ""
 keywords: "Gulp Zip”
-```
+---
+
 开启网站的 gzip 压缩功能，通常可以高达70%，也就是说，如果你的网页有30K，压缩之后就变成9K， 对于大部分网站，显然可以明显提高浏览速度（注：需要浏览器支持）。
 
 测试工具：[google speed](http://developers.google.com/speed/pagespeed/insights/)

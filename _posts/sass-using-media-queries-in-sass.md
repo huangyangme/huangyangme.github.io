@@ -1,10 +1,10 @@
-```
+---
 layout: post
 title: "Sass media queries"
 comments: true
 description: "Responsive Web Design in Sass: Using media queries in Sass 3.2"
 keywords: "Sass”
-```
+---
 
 ## queries 变量
 

@@ -1,3 +1,11 @@
+---
+layout: post
+title: "为什么要 WebP？"
+comments: true
+description: ""
+keywords: "webp”
+---
+
 # 为什么要 WebP？
 
 图片是流量消耗大头。不仅存储流量费用使用越来越多，客户端打卡图片速度慢。
