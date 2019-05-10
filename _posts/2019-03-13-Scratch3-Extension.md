@@ -82,6 +82,14 @@ const builtinExtensions = {
 
 
 
+注意：scratch-gui 默认执行 `npm run build`，构建的 js 文件过大，需要将 webpage NODE_ENV 设为 production。可在`package.json` 里，将 scripts 的 build 命令加上 `--mode production`。如下：
+
+`"build": "npm run clean && webpack --progress --colors --bail --mode production",`
+
+建议将构建的文件放在对象存储，并开启 CDN 加速和 GZIP 压缩。
+
 相关阅读：
 
 [https://blog.just4fun.site/create-first-Scratch3-Extension.html](https://blog.just4fun.site/create-first-Scratch3-Extension.html)
+
+[https://github.com/webpack/webpack/issues/6460](https://github.com/webpack/webpack/issues/6460)
